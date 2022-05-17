@@ -18,16 +18,16 @@ function Nav() {
       </a>
       <ul id="nav" className="nav">
         <li className="navoptions">
-          <Link to="/home#home">home</Link>
+          <Link to="#home">home</Link>
         </li>
         <li className="navoptions">
-          <Link to="/home#resume">resume</Link>
+          <Link to="#resume">resume</Link>
         </li>
         <li className="navoptions">
-          <Link to="/home#testimonials">testimonials</Link>
+          <Link to="#testimonials">testimonials</Link>
         </li>
         <li className="navoptions">
-          <Link to="/home#contact">contact</Link>
+          <Link to="#contact">contact</Link>
         </li>
         <li className="navoptions">
           <Link to="/portfolio">portfolio</Link>
