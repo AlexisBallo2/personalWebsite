@@ -1,45 +1,27 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useRef, useEffect } from "react";
 
-// Path2D for a Heart SVG
-const heartSVG =
-  "M0 200 v-200 h200 a100,100 90 0,1 0,200 a100,100 90 0,1 -200,0 z";
-const SVG_PATH = new Path2D(heartSVG);
-
-// Scaling Constants for Canvas
-const SCALE = 0;
-const OFFSET = 1;
-export const canvasWidth = 10;
-export const canvasHeight = 10;
-
-export function draw(ctx, location) {
-  console.log("attempting to draw");
-  ctx.fillStyle = "red";
-  ctx.shadowColor = "blue";
-  ctx.shadowBlur = 15;
-  ctx.save();
-  ctx.scale(SCALE, SCALE);
-  ctx.translate(location.x / SCALE - OFFSET, location.y / SCALE - OFFSET);
-  ctx.rotate((225 * Math.PI) / 180);
-  ctx.fill(SVG_PATH);
-  // .restore(): Canvas 2D API restores the most recently saved canvas state
-  ctx.restore();
-}
-
-export function useCanvas() {
+const useCanvas = (draw) => {
   const canvasRef = useRef(null);
-  const [coordinates, setCoordinates] = useState([]);
 
   useEffect(() => {
-    const canvasObj = canvasRef.current;
-    const ctx = canvasObj.getContext("2d");
-    // clear the canvas area before rendering the coordinates held in state
-    ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+    const canvas = canvasRef.current;
+    const context = canvas.getContext("2d");
+    let frameCount = 0;
+    let animationFrameId;
 
-    // draw all coordinates held in state
-    coordinates.forEach((coordinate) => {
-      draw(ctx, coordinate);
-    });
-  });
+    const render = () => {
+      frameCount++;
+      draw(context, frameCount, canvas);
+      animationFrameId = window.requestAnimationFrame(render);
+    };
+    render();
 
-  return [coordinates, setCoordinates, canvasRef, canvasWidth, canvasHeight];
-}
+    return () => {
+      window.cancelAnimationFrame(animationFrameId);
+    };
+  }, [draw]);
+
+  return canvasRef;
+};
+
+export default useCanvas;
