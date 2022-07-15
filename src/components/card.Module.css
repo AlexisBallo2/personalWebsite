@@ -9,9 +9,23 @@
   color: black;
 }
 
+@media only screen and (max-width: 767px) {
+  .cardMain {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 80vw;
+  color: black;
+}
+}
+
 .title {
   font-size: 20px;
   padding: 10px;
+  text-align: center;
 }
 
 .image {
