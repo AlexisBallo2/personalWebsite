@@ -1,17 +1,20 @@
+import React from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Helmet } from "react-helmet";
 import "./css/default.css";
 import "./css/fonts.css";
 import "./css/layout.css";
 import "./css/magnific-popup.css";
 import "./css/media-queries.css";
-
 //import useOnScreen from "../hooks/useOnScreen";
+import styles from "./homepage.module.css";
+import bulletpitch from "./images/resumeImages/bulletpitchLogo.png";
+import mdSci from "./images/resumeImages/Maryland_Science_Center_Logo.png";
+import pulseImage from "./images/resumeImages/pulseTransport.png";
+import rendia from "./images/resumeImages/R-Logo.png";
 import Nav from "./Nav";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
-import React, { useEffect, useRef, useState } from "react";
-import { Helmet } from "react-helmet";
-import { Anchor } from "antd";
-import { Link } from "react-router-dom";
+
 
 function HomePage() {
   return (
@@ -36,31 +39,6 @@ function HomePage() {
         <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" />
       </Helmet>
       <header id="home">
-        {/* <nav id="nav-wrap">
-          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
-            Show navigation
-          </a>
-          <a className="mobile-btn" href="#" title="Hide navigation">
-            Hide navigation
-          </a>
-          <ul id="nav" className="nav">
-            <li className="navoptions">
-              <AnchorLink href="#home">Home</AnchorLink>
-            </li>
-            <li className="navoptions">
-              <AnchorLink href="#resume">Resume</AnchorLink>
-            </li>
-            <li className="navoptions">
-              <AnchorLink href="#testimonials">testimonials</AnchorLink>
-            </li>
-            <li className="navoptions">
-              <AnchorLink href="#contact">contact</AnchorLink>
-            </li>
-            <li className="navoptions">
-              <Link to="/portfolio">portfolio</Link>
-            </li>
-          </ul>
-        </nav> */}
         <div className="row banner">
           <div className="banner-text">
             <h1 className="responsive-headline">Alexis Ballo</h1>
@@ -119,7 +97,7 @@ function HomePage() {
             </h1>
           </div>
 
-          <div className="nine columns main-col">
+          <div className="nine columns main-col" style={{ borderLeft: "3px solid #11abb0" }}>
             <div className="row item">
               <div className="twelve columns">
                 <h3>Middlebury College</h3>
@@ -162,54 +140,129 @@ function HomePage() {
         <div className="row work">
           <div className="three columns header-col">
             <h1>
-              <span>Work</span>
+              <span>Work Experience</span>
             </h1>
           </div>
 
-          <div className="nine columns main-col">
-            <div className="row item">
-              <div className="twelve columns">
-                <h3>Pulse Medical Transport</h3>
-                <p className="info">
-                  EMT <span>&bull;</span>{" "}
-                  <em className="date">July 2021 - Present</em>
-                </p>
+          <div className="nine columns main-col" style={{ borderLeft: "3px solid #11abb0" }}>
 
-                <p>
-                  Primary provider when transporting patients to/from medical
-                  facilities.
-                </p>
+            <div className="row item" style={{ padding: "20px 0 20px 0" }}>
+              <div className="twelve columns">
+                <div className="two columns">
+                  <img src={bulletpitch}></img>
+                </div>
+                <div className="ten columns" style={{ padding: "0px" }}>
+                  <div className={styles.spacingDiv}>
+                    <h3>bulletpitch</h3>
+                    <p className="info">
+                      Head of Operations <span>&bull;</span>{" "}
+                      <em className="date">July 2022 - Present</em>
+                    </p>
+                  </div>
+                </div>
+                <div className="twelve columns">
+                  <p>
+                    Worked with founders to develop a modern website and expedite growth
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="row item">
-              <div className="twelve columns">
-                <h3>Maryland Science Center</h3>
-                <p className="info">
-                  Program Assistant <span>&bull;</span>{" "}
-                  <em className="date">November 2018 - March 2020</em>
-                </p>
 
-                <p>
-                  Worked to organize and run overnight activities for children
-                  at the Maryland Science Center. Helped setup and cleanup
-                  science activities and snack, prepare the students for
-                  bedtime, and make sure children adhered to the schedule.
-                </p>
+            <div className="row item" style={{ padding: "20px 0 20px 0" }}>
+
+              <div className="twelve columns">
+                <div className="two columns">
+                  <img src={rendia} style={{ padding: "5px" }}></img>
+                </div>
+                <div className="ten columns" style={{ padding: "0px" }} >
+                  <div className={styles.spacingDiv}>
+                    <h3>Rendia</h3>
+                    <p className="info">
+                      Software Engineering Intern <span>&bull;</span>{" "}
+                      <em className="date">May 2022 - August 2022</em>
+                    </p>
+                  </div>
+
+                </div>
+
+
+                <div className="twelve columns" >
+                  <p>
+                    Worked with the engineering team to develop their patient education product.
+                    <div>
+                      <h5>Achievements</h5>
+                      <ul className={styles.RendiaAchievements}>
+                        <li>Assisted the team with minor bug fixes</li>
+                        <li>Developed a proof of concept HLS video streaming authorization protocol</li>
+                        <li>
+                          <ul className={styles.nestedList}>
+                            <li>
+                              Studied current authorization protocol involving mp4 video files
+                            </li>
+                            <li>
+                              Implemented three seperate solutions using different web services (<a href="https://bunny.net/">bunny.net</a>, <a href="https://www.cloudflare.com/">Cloudflare</a>, <a href="https://www.backblaze.com/">Backblaze</a>)
+                            </li>
+                            <li>
+                              Created and deployed python server for load testing the different solutions using <a href="https://jmeter.apache.org/">Apache Jmeter</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <div className="row item" style={{ padding: "20px 0 20px 0" }}>
+              <div className="twelve columns">
+                <div className="two columns">
+                  <img src={pulseImage}></img>
+                </div>
+                <div className="ten columns" style={{ padding: "0px" }}>
+                  <div className={styles.spacingDiv}>
+                    <h3>Pulse Medical Transport</h3>
+                    <p className="info">
+                      EMT <span>&bull;</span>{" "}
+                      <em className="date">July 2021 - September 2021</em>
+                    </p>
+                  </div>
+                </div>
+                <div className="twelve columns">
+                  <p>
+                    Primary provider when transporting patients to/from medical facilities.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="row item">
+            <div className="row item" style={{ padding: "20px 0 20px 0" }}>
               <div className="twelve columns">
-                <h3>The Watershed</h3>
-                <p className="info">
-                  Busser <span>&bull;</span>{" "}
-                  <em className="date">June 2021 - Present</em>
-                </p>
-
-                <p>Brought food to and cleaned up tables.</p>
+                <div className="two columns">
+                  <img src={mdSci}></img>
+                </div>
+                <div className="ten columns" style={{ padding: "0px" }}>
+                  <div className={styles.spacingDiv}>
+                    <h3>Maryland Science Center</h3>
+                    <p className="info">
+                      Program Assistant <span>&bull;</span>{" "}
+                      <em className="date">November 2018 - March 2020</em>
+                    </p>
+                  </div>
+                </div>
+                <div className="twelve columns">
+                  <p>
+                    Worked to organize and run overnight activities for children at the Maryland Science Center. Helped setup and cleanup science activities and snack, prepare the students for bedtime, and make sure children adhered to the schedule
+                  </p>
+                </div>
               </div>
             </div>
+
+
+
+
           </div>
         </div>
 
@@ -220,7 +273,7 @@ function HomePage() {
             </h1>
           </div>
 
-          <div className="nine columns main-col">
+          <div className="nine columns main-col" style={{ borderLeft: "3px solid #11abb0" }}>
             <div className="notbars">
               <h3 className="">Hard Skills</h3>
               <ul className="newskill">
