@@ -153,7 +153,7 @@ function HomePage() {
                 </div>
                 <div className="ten columns" style={{ padding: "0px" }}>
                   <div className={styles.spacingDiv}>
-                    <h3>bulletpitch</h3>
+                    <h3><a href = "www.bulletpitch.xyz" style={{color:"black"}}>bulletpitch</a></h3>
                     <p className="info">
                       Head of Operations <span>&bull;</span>{" "}
                       <em className="date">July 2022 - Present</em>
@@ -177,7 +177,7 @@ function HomePage() {
                 </div>
                 <div className="ten columns" style={{ padding: "0px" }} >
                   <div className={styles.spacingDiv}>
-                    <h3>Rendia</h3>
+                     <h3><a href = "rendia.com" style={{color:"black"}}>Rendia</a></h3>
                     <p className="info">
                       Software Engineering Intern <span>&bull;</span>{" "}
                       <em className="date">May 2022 - August 2022</em>
@@ -209,6 +209,10 @@ function HomePage() {
                           </ul>
                         </li>
                       </ul>
+                      <h5>Technologies used</h5>
+                      <ul className={styles.RendiaAchievements}>
+                        <li>Python, PHP, HTML/CSS/JS , EmberJs, JMeter, Cloudflare workers, docker</li>
+                      </ul>
                     </div>
                   </p>
                 </div>
@@ -223,7 +227,7 @@ function HomePage() {
                 </div>
                 <div className="ten columns" style={{ padding: "0px" }}>
                   <div className={styles.spacingDiv}>
-                    <h3>Pulse Medical Transport</h3>
+                     <h3><a href = "https://www.pulsemt.com/" style={{color:"black"}}>Pulse Medical Transport</a></h3>
                     <p className="info">
                       EMT <span>&bull;</span>{" "}
                       <em className="date">July 2021 - September 2021</em>
@@ -245,7 +249,7 @@ function HomePage() {
                 </div>
                 <div className="ten columns" style={{ padding: "0px" }}>
                   <div className={styles.spacingDiv}>
-                    <h3>Maryland Science Center</h3>
+                    <h3><a href = "https://www.mdsci.com/" style={{color:"black"}}>Maryland Science Center</a></h3>
                     <p className="info">
                       Program Assistant <span>&bull;</span>{" "}
                       <em className="date">November 2018 - March 2020</em>
