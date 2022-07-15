@@ -6,6 +6,7 @@ import "./portfolio.Module.css";
 import webpageImg from "./../images/portfolio/websiteImg.png";
 import textleMappingImg from "./../images/portfolio/textileMappingImg.png";
 import middHacksImg from "./../images/portfolio/middHacks.png";
+import paymentApp from "./../images/portfolio/paymentApp.png"
 //import Canvas from "./Canvas";
 
 export default function Portfolio() {
@@ -13,6 +14,14 @@ export default function Portfolio() {
     <div>
       <Nav />
       <div className="cardHolder">
+        <Card
+          link="https://main.d2jwebn2gqqpvv.amplifyapp.com/"
+          name="Advanced Payment App"
+          description="Created a payment app for reducing transacitons after group expenditure. "
+          image={paymentApp}
+          descHead="Advanced Payment App"
+          skills={["React.js", "AWS Amplify", "Html, Css, Js"]}
+        />
         <Card
           link="https://www.alexisballo.com"
           name="This Website"
