@@ -12,6 +12,8 @@ import bulletpitch from "./images/resumeImages/bulletpitchLogo.png";
 import mdSci from "./images/resumeImages/Maryland_Science_Center_Logo.png";
 import pulseImage from "./images/resumeImages/pulseTransport.png";
 import rendia from "./images/resumeImages/R-Logo.png";
+import dpw from "./images/resumeImages/dpw.png";
+import codeintheschools from "./images/resumeImages/codeintheschools.png";
 import Nav from "./Nav";
 
 
@@ -259,6 +261,50 @@ function HomePage() {
                 <div className="twelve columns">
                   <p>
                     Worked to organize and run overnight activities for children at the Maryland Science Center. Helped setup and cleanup science activities and snack, prepare the students for bedtime, and make sure children adhered to the schedule
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="row item" style={{ padding: "20px 0 20px 0" }}>
+              <div className="twelve columns">
+                <div className="two columns" style = {{textAlign: "center"}}>
+                  <img alt = "dpw" src={dpw} style = {{maxWidth: "80px"}}></img>
+                </div>
+                <div className="ten columns" style={{ padding: "0px" }}>
+                  <div className={styles.spacingDiv}>
+                    <h3><a href = "https://generalservices.baltimorecity.gov/energy" style={{color:"black"}}>Baltimore City Energy Office</a></h3>
+                    <p className="info">
+                      Paid Intern <span>&bull;</span>{" "}
+                      <em className="date">July 2019 - August 2019</em>
+                    </p>
+                  </div>
+                </div>
+                <div className="twelve columns">
+                  <p>
+                    Investigated water infrastructure and methods to reduce water waste and energy usage in Baltimore City
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="row item" style={{ padding: "20px 0 20px 0" }}>
+              <div className="twelve columns">
+                <div className="two columns" style = {{textAlign: "center"}}>
+                  <img alt = "code in the schools" src={codeintheschools} style = {{maxWidth: "80px"}}></img>
+                </div>  
+                <div className="ten columns" style={{ padding: "0px" }}>
+                  <div className={styles.spacingDiv}>
+                    <h3><a href = "https://www.linkedin.com/company/code-in-the-schools/" style={{color:"black"}}>Code in the Schools</a></h3>
+                    <p className="info">
+                      YouthWorks Summer Student <span>&bull;</span>{" "}
+                      <em className="date">September 2017 - July 2018</em>
+                    </p>
+                  </div>
+                </div>
+                <div className="twelve columns">
+                  <p>
+                    Learned JavaScript through a Baltimore City Student Employment Office initiative to engage students in the workforce
                   </p>
                 </div>
               </div>

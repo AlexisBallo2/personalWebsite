@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.77982c8c.css",
-    "main.js": "/static/js/main.c6e63b6b.js",
+    "main.js": "/static/js/main.ff01a201.js",
     "static/media/websiteImg.png": "/static/media/websiteImg.202686ad4aa92f490b15.png",
     "static/media/textileMappingImg.png": "/static/media/textileMappingImg.8e4a38d3b067df217384.png",
     "static/media/middHacks.png": "/static/media/middHacks.a48c726c52bee9c045a1.png",
     "static/media/testimonials-bg.jpg": "/static/media/testimonials-bg.ed8cf87a9756c473b810.jpg",
+    "static/media/paymentApp.png": "/static/media/paymentApp.3d12c628b9e897fa2678.png",
     "static/media/header-background.jpg": "/static/media/header-background.60a1d768614a2bdc6a69.jpg",
     "static/media/librebaskerville-italic-webfont.svg": "/static/media/librebaskerville-italic-webfont.0b422488a719e23639bd.svg",
     "static/media/fontawesome-webfont.svg?v=4.0.3": "/static/media/fontawesome-webfont.d9b392ddb6b9040c3c66.svg",
@@ -71,10 +72,10 @@
     "static/media/fontello.woff?13439518": "/static/media/fontello.75a0066bb4cd6971750a.woff",
     "index.html": "/index.html",
     "main.77982c8c.css.map": "/static/css/main.77982c8c.css.map",
-    "main.c6e63b6b.js.map": "/static/js/main.c6e63b6b.js.map"
+    "main.ff01a201.js.map": "/static/js/main.ff01a201.js.map"
   },
   "entrypoints": [
     "static/css/main.77982c8c.css",
-    "static/js/main.c6e63b6b.js"
+    "static/js/main.ff01a201.js"
   ]
 }
