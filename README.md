@@ -1,3 +1,3 @@
-# Getting Started with Create React App
+# Personal Website
 
 this is the main repo for my website!
