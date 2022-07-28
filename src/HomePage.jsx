@@ -148,14 +148,15 @@ function HomePage() {
 
           <div className="nine columns main-col" style={{ borderLeft: "3px solid #11abb0" }}>
 
+             {/* bulletpitch */}
             <div className="row item" style={{ padding: "20px 0 20px 0" }}>
               <div className="twelve columns">
-                <div className="two columns" style = {{textAlign: "center"}}>
-                  <img alt = "bulletpitch" src={bulletpitch} style = {{maxWidth: "80px"}}></img>
+                <div className="two columns">
+                  <img src={bulletpitch}></img>
                 </div>
                 <div className="ten columns" style={{ padding: "0px" }}>
                   <div className={styles.spacingDiv}>
-                    <h3><a href = "www.bulletpitch.xyz" style={{color:"black"}}>bulletpitch</a></h3>
+                    <h3>bulletpitch</h3>
                     <p className="info">
                       Head of Operations <span>&bull;</span>{" "}
                       <em className="date">July 2022 - Present</em>
@@ -170,16 +171,16 @@ function HomePage() {
               </div>
             </div>
 
-
+              {/* rendia */}
             <div className="row item" style={{ padding: "20px 0 20px 0" }}>
 
               <div className="twelve columns">
-                <div className="two columns" style = {{textAlign: "center"}}>
-                  <img alt = "rendia" src={rendia} style = {{maxWidth: "60px"}}></img>
+                <div className="two columns">
+                  <img src={rendia} style={{ padding: "5px" }}></img>
                 </div>
                 <div className="ten columns" style={{ padding: "0px" }} >
                   <div className={styles.spacingDiv}>
-                     <h3><a href = "rendia.com" style={{color:"black"}}>Rendia</a></h3>
+                    <h3>Rendia</h3>
                     <p className="info">
                       Software Engineering Intern <span>&bull;</span>{" "}
                       <em className="date">May 2022 - August 2022</em>
@@ -187,8 +188,6 @@ function HomePage() {
                   </div>
 
                 </div>
-
-
                 <div className="twelve columns" >
                   <p>
                     Worked with the engineering team to develop their patient education product.
@@ -210,6 +209,7 @@ function HomePage() {
                             </li>
                           </ul>
                         </li>
+                        <li>Presented a lunch and learn talk about the rubix cube with <a href = "/file/cube.pdf">homemade materials</a></li>
                       </ul>
                       <h5>Technologies used</h5>
                       <ul className={styles.RendiaAchievements}>
@@ -221,15 +221,16 @@ function HomePage() {
               </div>
 
             </div>
-
+              
+              {/* Pulse */}
             <div className="row item" style={{ padding: "20px 0 20px 0" }}>
               <div className="twelve columns">
-                <div className="two columns" style = {{textAlign: "center"}}>
-                  <img alt = "pulseMedical" src={pulseImage} style = {{maxWidth: "90px"}}></img>
+                <div className="two columns">
+                  <img src={pulseImage}></img>
                 </div>
                 <div className="ten columns" style={{ padding: "0px" }}>
                   <div className={styles.spacingDiv}>
-                     <h3><a href = "https://www.pulsemt.com/" style={{color:"black"}}>Pulse Medical Transport</a></h3>
+                    <h3>Pulse Medical Transport</h3>
                     <p className="info">
                       EMT <span>&bull;</span>{" "}
                       <em className="date">July 2021 - September 2021</em>
@@ -243,15 +244,16 @@ function HomePage() {
                 </div>
               </div>
             </div>
-
+ 
+              {/* sci */}
             <div className="row item" style={{ padding: "20px 0 20px 0" }}>
               <div className="twelve columns">
-                <div className="two columns" style = {{textAlign: "center"}}>
-                  <img alt = "maryland sci center" src={mdSci} style = {{maxWidth: "80px"}}></img>
+                <div className="two columns">
+                  <img src={mdSci}></img>
                 </div>
                 <div className="ten columns" style={{ padding: "0px" }}>
                   <div className={styles.spacingDiv}>
-                    <h3><a href = "https://www.mdsci.com/" style={{color:"black"}}>Maryland Science Center</a></h3>
+                    <h3>Maryland Science Center</h3>
                     <p className="info">
                       Program Assistant <span>&bull;</span>{" "}
                       <em className="date">November 2018 - March 2020</em>
@@ -266,6 +268,7 @@ function HomePage() {
               </div>
             </div>
             
+             {/* energy */}
             <div className="row item" style={{ padding: "20px 0 20px 0" }}>
               <div className="twelve columns">
                 <div className="two columns" style = {{textAlign: "center"}}>
@@ -288,6 +291,7 @@ function HomePage() {
               </div>
             </div>
             
+             {/* codeinschools */}
             <div className="row item" style={{ padding: "20px 0 20px 0" }}>
               <div className="twelve columns">
                 <div className="two columns" style = {{textAlign: "center"}}>
@@ -315,6 +319,11 @@ function HomePage() {
 
           </div>
         </div>
+
+
+
+        
+  
 
         <div className="row skill">
           <div className="three columns header-col">
@@ -366,7 +375,7 @@ function HomePage() {
           </div>
         </div>
       </section>
-      <section id="contact" style = {{backgroundColor: " #2a2626 "}}>
+      <section id="contact">
         <div className="row">
           <div className="two columns header-col">
             <h1>
