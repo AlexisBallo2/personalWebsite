@@ -43,4 +43,4 @@ jobs:
       run: ls -a ./build/
 
     - name: Deploy with rsync
-      run: rsync -r ./build/ root@${{ secrets.SSH_HOST }}:/home/test/
+      run: rsync -r ./build/ root@${{ secrets.SSH_HOST }}:/var/www/alexisballo.com/html
