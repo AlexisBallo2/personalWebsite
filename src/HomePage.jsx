@@ -166,7 +166,27 @@ function HomePage() {
                 <div className="twelve columns">
                   <p>
                     Worked with founders to develop a modern website and expedite growth
-                  </p>
+                 </p>
+                  <h5>Achievements</h5>
+                  <ul className={styles.RendiaAchievements}>
+                    <li>
+                      Developed sophisticated website for hosting and delivering content to interested individuals
+                    </li>
+                    <li>
+                      Used Google Search Console to build company's SEO
+                    </li>
+                    <li>
+                      Integrated components of multiple websites into one sleek site
+                    </li>
+                    <li>
+                      Built mass email sending program using stmb
+                    </li>
+                  </ul>
+                  <h5>Technologies used</h5>
+                  <ul className={styles.RendiaAchievements}>
+                    <li>Python, HTML/CSS/JS, Wordpress, Google Search Console, Google Analytics</li>
+                  </ul>
+
                 </div>
               </div>
             </div>

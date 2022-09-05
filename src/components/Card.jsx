@@ -8,7 +8,6 @@ export default function Card(props) {
     <a className="linkall" href={props.link} target="_blank">
       <div className="cardMain">
         <div className="title">{props.descHead}</div>
-        <br></br>
         <img className="image" src={props.image}></img>
         <div className="description">
           <div className="Description">{props.description}</div>

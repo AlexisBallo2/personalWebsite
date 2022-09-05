@@ -6,7 +6,9 @@ import "./portfolio.Module.css";
 import webpageImg from "./../images/portfolio/websiteImg.png";
 import textleMappingImg from "./../images/portfolio/textileMappingImg.png";
 import middHacksImg from "./../images/portfolio/middHacks.png";
-import paymentApp from "./../images/portfolio/paymentApp.png"
+import paymentApp from "./../images/portfolio/paymentApp.png";
+import bulletpitch from "./../images/portfolio/bulletpitch.png";
+import shhmint from "./../images/portfolio/shhmint.png";
 //import Canvas from "./Canvas";
 
 export default function Portfolio() {
@@ -15,9 +17,33 @@ export default function Portfolio() {
       <Nav />
       <div className="cardHolder">
         <Card
-          link="https://main.d2jwebn2gqqpvv.amplifyapp.com/"
+          link="bulletpitch.xyz"
+          name="bulletpitch Website"
+          description="Created a website to facilitate subscriptions and display content. "
+          image={bulletpitch}
+          descHead="bulletpitch Website"
+          skills={["React.js", "digitalOcean", "Wordpress", "Html, Css, Js"]}
+        />
+        <Card
+          link="shhmint.com"
+          name="bulletpitch Website"
+          description="Participated in crossmint hackathon competition. Partner and I designed a shopify plugin for NFT minting. Finished in 2nd place. "
+          image={shhmint}
+          descHead="Crossmint Hackathon Project: shhmint"
+          skills={[
+            "postgres",
+            "shopify",
+            "solaris",
+            "React.js",
+            "digitalOcean",
+            "Wordpress",
+            "Html, Css, Js",
+          ]}
+        />
+        <Card
+          link="ballo-testing.com"
           name="Advanced Payment App"
-          description="Created a payment app for reducing transacitons after group expenditure. "
+          description="Created a payment app for reducing transacitons after group expenditures. "
           image={paymentApp}
           descHead="Advanced Payment App"
           skills={["React.js", "AWS Amplify", "Html, Css, Js"]}
@@ -28,7 +54,7 @@ export default function Portfolio() {
           description="While website development is not my main interest, I created this website to showcase my tech versatility and knowledge about different fields in computer science.  "
           image={webpageImg}
           descHead="Personal Resume Website"
-          skills={["React.js", "DigitalOcean", "Html, Css, Js"]}
+          skills={["React.js", "DigitalOcean", "postgres", "Html, Css, Js"]}
         />
         <Card
           name="Textile Mapping"

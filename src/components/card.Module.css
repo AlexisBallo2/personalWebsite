@@ -7,25 +7,27 @@
   border-radius: 5px;
   width: 50vw;
   color: black;
+  space-between: 10px;
 }
 
 @media only screen and (max-width: 767px) {
   .cardMain {
-  background-color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  width: 80vw;
-  color: black;
-}
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 80vw;
+    color: black;
+  }
 }
 
 .title {
   font-size: 20px;
   padding: 10px;
   text-align: center;
+  margin: 5px;
 }
 
 .image {
