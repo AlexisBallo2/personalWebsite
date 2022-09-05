@@ -29,7 +29,7 @@ function Nav() {
           <Link to="/#contact">contact</Link>
         </li>
         <li className="navoptions">
-          <Link to="/portfolio">portfolio</Link>
+          <Link to="/?page=portfolio">portfolio</Link>
         </li>
       </ul>
     </nav>

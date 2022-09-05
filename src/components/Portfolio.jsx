@@ -14,7 +14,6 @@ import shhmint from "./../images/portfolio/shhmint.png";
 export default function Portfolio() {
   return (
     <div>
-      <Nav />
       <div className="cardHolder">
         <Card
           link="https://bulletpitch.xyz"

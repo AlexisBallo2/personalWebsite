@@ -19,7 +19,6 @@ import Nav from "./Nav";
 function HomePage() {
   return (
     <div>
-      <Nav />
       <Helmet>
         <script
           async
