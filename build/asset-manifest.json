@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.77982c8c.css",
-    "main.js": "/static/js/main.3918b4f3.js",
+    "main.css": "/static/css/main.3bb3580c.css",
+    "main.js": "/static/js/main.28bb0e5a.js",
     "static/media/websiteImg.png": "/static/media/websiteImg.202686ad4aa92f490b15.png",
     "static/media/textileMappingImg.png": "/static/media/textileMappingImg.8e4a38d3b067df217384.png",
     "static/media/middHacks.png": "/static/media/middHacks.a48c726c52bee9c045a1.png",
+    "static/media/shhmint.png": "/static/media/shhmint.95e94298c7cecfd4c538.png",
+    "static/media/bulletpitch.png": "/static/media/bulletpitch.c24d58ffd11bd2f58d34.png",
+    "static/media/paymentApp.png": "/static/media/paymentApp.ed16c11ac18d6f7fe38a.png",
     "static/media/testimonials-bg.jpg": "/static/media/testimonials-bg.ed8cf87a9756c473b810.jpg",
-    "static/media/paymentApp.png": "/static/media/paymentApp.3d12c628b9e897fa2678.png",
     "static/media/header-background.jpg": "/static/media/header-background.60a1d768614a2bdc6a69.jpg",
     "static/media/librebaskerville-italic-webfont.svg": "/static/media/librebaskerville-italic-webfont.0b422488a719e23639bd.svg",
     "static/media/fontawesome-webfont.svg?v=4.0.3": "/static/media/fontawesome-webfont.d9b392ddb6b9040c3c66.svg",
@@ -73,11 +75,11 @@
     "static/media/fontello.svg?13439518": "/static/media/fontello.1ddb36f50bb11bd2aa4f.svg",
     "static/media/fontello.woff?13439518": "/static/media/fontello.75a0066bb4cd6971750a.woff",
     "index.html": "/index.html",
-    "main.77982c8c.css.map": "/static/css/main.77982c8c.css.map",
-    "main.3918b4f3.js.map": "/static/js/main.3918b4f3.js.map"
+    "main.3bb3580c.css.map": "/static/css/main.3bb3580c.css.map",
+    "main.28bb0e5a.js.map": "/static/js/main.28bb0e5a.js.map"
   },
   "entrypoints": [
-    "static/css/main.77982c8c.css",
-    "static/js/main.3918b4f3.js"
+    "static/css/main.3bb3580c.css",
+    "static/js/main.28bb0e5a.js"
   ]
 }

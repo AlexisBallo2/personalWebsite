@@ -32,6 +32,7 @@ export default function Portfolio() {
           descHead="Crossmint Hackathon Project: shhmint"
           skills={[
             "postgres",
+            "sql",
             "shopify",
             "solaris",
             "React.js",
