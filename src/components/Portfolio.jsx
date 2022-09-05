@@ -17,7 +17,7 @@ export default function Portfolio() {
       <Nav />
       <div className="cardHolder">
         <Card
-          link="bulletpitch.xyz"
+          link="https://bulletpitch.xyz"
           name="bulletpitch Website"
           description="Created a website to facilitate subscriptions and display content. "
           image={bulletpitch}
@@ -25,7 +25,7 @@ export default function Portfolio() {
           skills={["React.js", "digitalOcean", "Wordpress", "Html, Css, Js"]}
         />
         <Card
-          link="shhmint.com"
+          link="https://shhmint.com"
           name="bulletpitch Website"
           description="Participated in crossmint hackathon competition. Partner and I designed a shopify plugin for NFT minting. Finished in 2nd place. "
           image={shhmint}
@@ -42,7 +42,7 @@ export default function Portfolio() {
           ]}
         />
         <Card
-          link="ballo-testing.com"
+          link="https://ballo-testing.com"
           name="Advanced Payment App"
           description="Created a payment app for reducing transacitons after group expenditures. "
           image={paymentApp}
