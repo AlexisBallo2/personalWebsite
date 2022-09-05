@@ -30,6 +30,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "build-local": "react-scripts build && scp -r ./build/ root@143.244.145.167://var/www/alexisballo.com/html/",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
