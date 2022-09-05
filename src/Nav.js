@@ -3,7 +3,6 @@ import "./css/fonts.css";
 import "./css/layout.css";
 import "./css/magnific-popup.css";
 import "./css/media-queries.css";
-import AnchorLink from "antd/lib/anchor/AnchorLink";
 
 import { HashLink as Link } from "react-router-hash-link";
 
