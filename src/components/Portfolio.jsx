@@ -17,14 +17,6 @@ export default function Portfolio() {
       <Nav />
       <div className="cardHolder">
         <Card
-          link="test"
-          name="test"
-          description="test. "
-          image={bulletpitch}
-          descHead="test"
-          skills={["React.js", "digitalOcean", "Wordpress", "Html, Css, Js"]}
-        />
-        <Card
           link="https://bulletpitch.xyz"
           name="bulletpitch Website"
           description="Created a website to facilitate subscriptions and display content. "
