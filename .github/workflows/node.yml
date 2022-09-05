@@ -43,4 +43,7 @@ jobs:
       run: ls -a ./build/
 
     - name: Deploy with rsync
-      run: rsync -r ./build/ root@${{ secrets.SSH_HOST }}:/var/www/alexisballo.com/html
+      run: rsync -r ./build/ root@${{ secrets.SSH_HOST }}:/var/www/alexisballo.com/html/
+
+    - name: Restart nginx server
+      run: ssh root@${{ secrets.SSH_HOST }} && systemctl restart nginx.service
