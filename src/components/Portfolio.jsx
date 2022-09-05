@@ -52,7 +52,7 @@ export default function Portfolio() {
         <Card
           link="https://www.alexisballo.com"
           name="This Website"
-          description="While website development is not my main interest, I created this website to showcase my tech versatility and knowledge about different fields in computer science.  "
+          descrip:tion="While website development is not my main interest, I created this website to showcase my tech versatility and knowledge about different fields in computer science.  "
           image={webpageImg}
           descHead="Personal Resume Website"
           skills={["React.js", "DigitalOcean", "postgres", "Html, Css, Js"]}
