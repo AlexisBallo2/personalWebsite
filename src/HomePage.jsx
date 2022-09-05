@@ -16,8 +16,6 @@ import dpw from "./images/resumeImages/dpw.png";
 import codeintheschools from "./images/resumeImages/codeintheschools.png";
 import Nav from "./Nav";
 
-
-
 function HomePage() {
   return (
     <div>
@@ -99,7 +97,10 @@ function HomePage() {
             </h1>
           </div>
 
-          <div className="nine columns main-col" style={{ borderLeft: "3px solid #11abb0" }}>
+          <div
+            className="nine columns main-col"
+            style={{ borderLeft: "3px solid #11abb0" }}
+          >
             <div className="row item">
               <div className="twelve columns">
                 <h3>Middlebury College</h3>
@@ -124,6 +125,7 @@ function HomePage() {
                 <p></p>
               </div>
             </div>
+
             <div className="row item">
               <div className="twelve columns">
                 <h3>National Center for Outdoor and Adventure Education</h3>
@@ -131,6 +133,19 @@ function HomePage() {
                   {" "}
                   EMT certification <span>&bull;</span>{" "}
                   <em className="date">April 2021</em>
+                </p>
+
+                <p></p>
+              </div>
+            </div>
+
+            <div className="row item">
+              <div className="twelve columns">
+                <h3>Johns Hopkins Summer Class</h3>
+                <p className="info">
+                  {" "}
+                  Recieve grade "A" in summer biomedical engineering course
+                  <span>&bull;</span> <em className="date">April 2020</em>
                 </p>
 
                 <p></p>
@@ -146,9 +161,11 @@ function HomePage() {
             </h1>
           </div>
 
-          <div className="nine columns main-col" style={{ borderLeft: "3px solid #11abb0" }}>
-
-             {/* bulletpitch */}
+          <div
+            className="nine columns main-col"
+            style={{ borderLeft: "3px solid #11abb0" }}
+          >
+            {/* bulletpitch */}
             <div className="row item" style={{ padding: "20px 0 20px 0" }}>
               <div className="twelve columns">
                 <div className="two columns">
@@ -165,40 +182,40 @@ function HomePage() {
                 </div>
                 <div className="twelve columns">
                   <p>
-                    Worked with founders to develop a modern website and expedite growth
-                 </p>
+                    Worked with founders to develop a modern website and
+                    expedite growth
+                  </p>
                   <h5>Achievements</h5>
                   <ul className={styles.RendiaAchievements}>
                     <li>
-                      Developed sophisticated website for hosting and delivering content to interested individuals
+                      Developed sophisticated website for hosting and delivering
+                      content to interested individuals
                     </li>
+                    <li>Used Google Search Console to build company's SEO</li>
                     <li>
-                      Used Google Search Console to build company's SEO
+                      Integrated components of multiple websites into one sleek
+                      site
                     </li>
-                    <li>
-                      Integrated components of multiple websites into one sleek site
-                    </li>
-                    <li>
-                      Built mass email sending program using stmb
-                    </li>
+                    <li>Built mass email sending program using stmb</li>
                   </ul>
                   <h5>Technologies used</h5>
                   <ul className={styles.RendiaAchievements}>
-                    <li>Python, HTML/CSS/JS, Wordpress, Google Search Console, Google Analytics</li>
+                    <li>
+                      Python, HTML/CSS/JS, Wordpress, Google Search Console,
+                      Google Analytics
+                    </li>
                   </ul>
-
                 </div>
               </div>
             </div>
 
-              {/* rendia */}
+            {/* rendia */}
             <div className="row item" style={{ padding: "20px 0 20px 0" }}>
-
               <div className="twelve columns">
                 <div className="two columns">
                   <img src={rendia} style={{ padding: "5px" }}></img>
                 </div>
-                <div className="ten columns" style={{ padding: "0px" }} >
+                <div className="ten columns" style={{ padding: "0px" }}>
                   <div className={styles.spacingDiv}>
                     <h3>Rendia</h3>
                     <p className="info">
@@ -206,43 +223,64 @@ function HomePage() {
                       <em className="date">May 2022 - August 2022</em>
                     </p>
                   </div>
-
                 </div>
-                <div className="twelve columns" >
+                <div className="twelve columns">
                   <p>
-                    Worked with the engineering team to develop their patient education product.
+                    Worked with the engineering team to develop their patient
+                    education product.
                     <div>
                       <h5>Achievements</h5>
                       <ul className={styles.RendiaAchievements}>
                         <li>Assisted the team with minor bug fixes</li>
-                        <li>Developed a proof of concept HLS video streaming authorization protocol</li>
+                        <li>
+                          Developed a proof of concept HLS video streaming
+                          authorization protocol
+                        </li>
                         <li>
                           <ul className={styles.nestedList}>
                             <li>
-                              Studied current authorization protocol involving mp4 video files
+                              Studied current authorization protocol involving
+                              mp4 video files
                             </li>
                             <li>
-                              Implemented three seperate solutions using different web services (<a href="https://bunny.net/">bunny.net</a>, <a href="https://www.cloudflare.com/">Cloudflare</a>, <a href="https://www.backblaze.com/">Backblaze</a>)
+                              Implemented three seperate solutions using
+                              different web services (
+                              <a href="https://bunny.net/">bunny.net</a>,{" "}
+                              <a href="https://www.cloudflare.com/">
+                                Cloudflare
+                              </a>
+                              ,{" "}
+                              <a href="https://www.backblaze.com/">Backblaze</a>
+                              )
                             </li>
                             <li>
-                              Created and deployed python server for load testing the different solutions using <a href="https://jmeter.apache.org/">Apache Jmeter</a>
+                              Created and deployed python server for load
+                              testing the different solutions using{" "}
+                              <a href="https://jmeter.apache.org/">
+                                Apache Jmeter
+                              </a>
                             </li>
                           </ul>
                         </li>
-                        <li>Presented a lunch and learn talk about the rubix cube with <a href = "/file/cube.pdf">homemade materials</a></li>
+                        <li>
+                          Presented a lunch and learn talk about the rubix cube
+                          with <a href="/file/cube.pdf">homemade materials</a>
+                        </li>
                       </ul>
                       <h5>Technologies used</h5>
                       <ul className={styles.RendiaAchievements}>
-                        <li>Python, PHP, HTML/CSS/JS , EmberJs, JMeter, Cloudflare workers, docker</li>
+                        <li>
+                          Python, PHP, HTML/CSS/JS , EmberJs, JMeter, Cloudflare
+                          workers, docker
+                        </li>
                       </ul>
                     </div>
                   </p>
                 </div>
               </div>
-
             </div>
-              
-              {/* Pulse */}
+
+            {/* Pulse */}
             <div className="row item" style={{ padding: "20px 0 20px 0" }}>
               <div className="twelve columns">
                 <div className="two columns">
@@ -259,13 +297,14 @@ function HomePage() {
                 </div>
                 <div className="twelve columns">
                   <p>
-                    Primary provider when transporting patients to/from medical facilities.
+                    Primary provider when transporting patients to/from medical
+                    facilities.
                   </p>
                 </div>
               </div>
             </div>
- 
-              {/* sci */}
+
+            {/* sci */}
             <div className="row item" style={{ padding: "20px 0 20px 0" }}>
               <div className="twelve columns">
                 <div className="two columns">
@@ -282,21 +321,31 @@ function HomePage() {
                 </div>
                 <div className="twelve columns">
                   <p>
-                    Worked to organize and run overnight activities for children at the Maryland Science Center. Helped setup and cleanup science activities and snack, prepare the students for bedtime, and make sure children adhered to the schedule
+                    Worked to organize and run overnight activities for children
+                    at the Maryland Science Center. Helped setup and cleanup
+                    science activities and snack, prepare the students for
+                    bedtime, and make sure children adhered to the schedule
                   </p>
                 </div>
               </div>
             </div>
-            
-             {/* energy */}
+
+            {/* energy */}
             <div className="row item" style={{ padding: "20px 0 20px 0" }}>
               <div className="twelve columns">
-                <div className="two columns" style = {{textAlign: "center"}}>
-                  <img alt = "dpw" src={dpw} style = {{maxWidth: "80px"}}></img>
+                <div className="two columns" style={{ textAlign: "center" }}>
+                  <img alt="dpw" src={dpw} style={{ maxWidth: "80px" }}></img>
                 </div>
                 <div className="ten columns" style={{ padding: "0px" }}>
                   <div className={styles.spacingDiv}>
-                    <h3><a href = "https://generalservices.baltimorecity.gov/energy" style={{color:"black"}}>Baltimore City Energy Office</a></h3>
+                    <h3>
+                      <a
+                        href="https://generalservices.baltimorecity.gov/energy"
+                        style={{ color: "black" }}
+                      >
+                        Baltimore City Energy Office
+                      </a>
+                    </h3>
                     <p className="info">
                       Paid Intern <span>&bull;</span>{" "}
                       <em className="date">July 2019 - August 2019</em>
@@ -305,21 +354,33 @@ function HomePage() {
                 </div>
                 <div className="twelve columns">
                   <p>
-                    Investigated water infrastructure and methods to reduce water waste and energy usage in Baltimore City
+                    Investigated water infrastructure and methods to reduce
+                    water waste and energy usage in Baltimore City
                   </p>
                 </div>
               </div>
             </div>
-            
-             {/* codeinschools */}
+
+            {/* codeinschools */}
             <div className="row item" style={{ padding: "20px 0 20px 0" }}>
               <div className="twelve columns">
-                <div className="two columns" style = {{textAlign: "center"}}>
-                  <img alt = "code in the schools" src={codeintheschools} style = {{maxWidth: "80px"}}></img>
-                </div>  
+                <div className="two columns" style={{ textAlign: "center" }}>
+                  <img
+                    alt="code in the schools"
+                    src={codeintheschools}
+                    style={{ maxWidth: "80px" }}
+                  ></img>
+                </div>
                 <div className="ten columns" style={{ padding: "0px" }}>
                   <div className={styles.spacingDiv}>
-                    <h3><a href = "https://www.linkedin.com/company/code-in-the-schools/" style={{color:"black"}}>Code in the Schools</a></h3>
+                    <h3>
+                      <a
+                        href="https://www.linkedin.com/company/code-in-the-schools/"
+                        style={{ color: "black" }}
+                      >
+                        Code in the Schools
+                      </a>
+                    </h3>
                     <p className="info">
                       YouthWorks Summer Student <span>&bull;</span>{" "}
                       <em className="date">September 2017 - July 2018</em>
@@ -328,22 +389,15 @@ function HomePage() {
                 </div>
                 <div className="twelve columns">
                   <p>
-                    Learned JavaScript through a Baltimore City Student Employment Office initiative to engage students in the workforce
+                    Learned JavaScript through a Baltimore City Student
+                    Employment Office initiative to engage students in the
+                    workforce
                   </p>
                 </div>
               </div>
             </div>
-
-
-
-
           </div>
         </div>
-
-
-
-        
-  
 
         <div className="row skill">
           <div className="three columns header-col">
@@ -352,7 +406,10 @@ function HomePage() {
             </h1>
           </div>
 
-          <div className="nine columns main-col" style={{ borderLeft: "3px solid #11abb0" }}>
+          <div
+            className="nine columns main-col"
+            style={{ borderLeft: "3px solid #11abb0" }}
+          >
             <div className="notbars">
               <h3 className="">Hard Skills</h3>
               <ul className="newskill">
