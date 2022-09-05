@@ -5,7 +5,7 @@ export default function Card(props) {
   var skills = props.skills;
   console.log("skills", props.skills);
   return (
-    <a className="linkall" href={props.link} target="_blank">
+    <a className="linkall" href={props.link} target="_blank" rel="noreferrer">
       <div className="cardMain">
         <div className="title">{props.descHead}</div>
         <img className="image" src={props.image}></img>
