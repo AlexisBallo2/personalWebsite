@@ -3,7 +3,7 @@ import "./card.Module.css";
 //import images/portfolio";
 export default function Card(props) {
   var skills = props.skills;
-  console.log("skills", props.skills);
+
   return (
     <a className="linkall" href={props.link} target="_blank" rel="noreferrer">
       <div className="cardMain">
