@@ -167,8 +167,11 @@ function HomePage() {
             {/* bulletpitch */}
             <div className="row item" style={{ padding: "20px 0 20px 0" }}>
               <div className="twelve columns">
+                {/* <div className={styles.imageDiv}> */}
                 <div className="two columns">
-                  <img src={bulletpitch}></img>
+                  <div className={styles.imageDiv}>
+                    <img src={bulletpitch}></img>
+                  </div>
                 </div>
                 <div className="ten columns" style={{ padding: "0px" }}>
                   <div className={styles.spacingDiv}>
@@ -212,7 +215,10 @@ function HomePage() {
             <div className="row item" style={{ padding: "20px 0 20px 0" }}>
               <div className="twelve columns">
                 <div className="two columns">
-                  <img src={rendia} style={{ padding: "5px" }}></img>
+                  <div className={styles.imageDiv}>
+                    {/* added padding because it is a larger looking image */}
+                    <img src={rendia} style={{ padding: "10px" }}></img>
+                  </div>
                 </div>
                 <div className="ten columns" style={{ padding: "0px" }}>
                   <div className={styles.spacingDiv}>
@@ -283,7 +289,9 @@ function HomePage() {
             <div className="row item" style={{ padding: "20px 0 20px 0" }}>
               <div className="twelve columns">
                 <div className="two columns">
-                  <img src={pulseImage}></img>
+                  <div className={styles.imageDiv}>
+                    <img src={pulseImage}></img>
+                  </div>
                 </div>
                 <div className="ten columns" style={{ padding: "0px" }}>
                   <div className={styles.spacingDiv}>
@@ -307,7 +315,9 @@ function HomePage() {
             <div className="row item" style={{ padding: "20px 0 20px 0" }}>
               <div className="twelve columns">
                 <div className="two columns">
-                  <img src={mdSci}></img>
+                  <div className={styles.imageDiv}>
+                    <img src={mdSci}></img>
+                  </div>
                 </div>
                 <div className="ten columns" style={{ padding: "0px" }}>
                   <div className={styles.spacingDiv}>
@@ -333,7 +343,9 @@ function HomePage() {
             <div className="row item" style={{ padding: "20px 0 20px 0" }}>
               <div className="twelve columns">
                 <div className="two columns" style={{ textAlign: "center" }}>
-                  <img alt="dpw" src={dpw} style={{ maxWidth: "80px" }}></img>
+                  <div className={styles.imageDiv}>
+                    <img src={dpw}></img>
+                  </div>
                 </div>
                 <div className="ten columns" style={{ padding: "0px" }}>
                   <div className={styles.spacingDiv}>
@@ -364,11 +376,9 @@ function HomePage() {
             <div className="row item" style={{ padding: "20px 0 20px 0" }}>
               <div className="twelve columns">
                 <div className="two columns" style={{ textAlign: "center" }}>
-                  <img
-                    alt="code in the schools"
-                    src={codeintheschools}
-                    style={{ maxWidth: "80px" }}
-                  ></img>
+                  <div className={styles.imageDiv}>
+                    <img src={codeintheschools}></img>
+                  </div>
                 </div>
                 <div className="ten columns" style={{ padding: "0px" }}>
                   <div className={styles.spacingDiv}>
